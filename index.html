@@ -81,6 +81,9 @@
         bottom: -60px;
         left: 0;
         transform: translateX(-20%);
+        display: flex;
+        align-items: center; /* 세로 중앙정렬 */
+        gap: 10px;
       }
 
       #title-wrapper .inner .logo {
@@ -96,12 +99,10 @@
       }
 
       .steam {
-        background-color: aqua;
+        width: 100%;
+        height: auto;
       }
 
-      .steam > img {
-        width: 400px;
-      }
       #sum {
         width: 100%;
         height: auto;
@@ -128,8 +129,22 @@
         height: auto;
       }
 
+      .caution {
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 10px;
+        border: solid 2px #fff;
+        background: #e8303e;
+        padding: 1em 1.5em;
+        margin-inline: auto;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 30px;
+      }
+
       .titleText {
-        margin: 16px;
+        margin: 16px auto;
       }
       .synopsis {
         margin: 0 auto;
@@ -161,7 +176,7 @@
           <div class="inner">
             <div class="spacer"></div>
             <div class="section logo">
-              <img src="./asset/img/logo.png" alt="로고" id="logo" />
+              <img src="./asset/img/titlelogo.png" alt="로고" id="logo" />
             </div>
 
             <div class="section">
@@ -171,27 +186,30 @@
                 id="sales"
               />
             </div>
-            <div class="section">
-              <a href="https://google.com" class="steam">
+            <div class="section"></div>
+            <div class="info">
+              <img src="./asset/img/요약.png" alt="요약" id="sum" />
+              <a
+                href="https://store.steampowered.com/app/2799860/INAZUMA_ELEVEN_Victory_Road/"
+                class="steam"
+              >
                 <img
                   src="./asset/img/구매하러가기버튼.png"
                   alt="게임 구매하기 버튼"
                 />
               </a>
             </div>
-            <div class="info">
-              <img src="./asset/img/요약.png" alt="요약" id="sum" />
-            </div>
           </div>
         </div>
         <!-- 타이틀 끝 -->
 
         <div class="infoArea">
+          <div class="caution">주의사항</div>
           <div class="titleText">
             <img src="./asset/img/타이틀.png" alt="타이틀" />
           </div>
           <div class="synopsis">
-            <img src="./asset/img/시놉시스.png" alt="시놉시스" />
+            <img src="./asset/img/시놉시스1.png" alt="시놉시스" />
           </div>
 
           <div class="gradient-outline">

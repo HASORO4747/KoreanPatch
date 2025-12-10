@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이나즈마 일레븐 한글패치</title>
+    <meta content="이나즈마일레븐" />
+    <meta content="이나즈마일레븐 한글패치" property="description" />
+    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <link rel="stylesheet" href="./asset/css/styles.css" />
+    <style>
+      /* 기본 설정 */
+      body {
+        margin: 0;
+        font-size: 16px;
+        background: #71e1f9;
+        font-family: "Noto Sans KR", sans-serif;
+        overflow-x: hidden;
+        text-align: center;
+      }
+
+      .page-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .section {
+        width: 100%;
+      }
+
+      .section img {
+        display: block;
+      }
+
+      /* 섹션 간 여백 */
+      .spacer {
+        height: 40px;
+      }
+
+      /* 타이틀 */
+
+      #title-wrapper {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #title-wrapper .titleBg {
+        background: url("./asset/img/ezgif-7d9e06f0f4cdd2ea.webp");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 720px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+      }
+
+      #title-wrapper:after {
+        font-size: 16px;
+        content: "";
+        height: 80px;
+        display: block;
+        width: 100%;
+        background: linear-gradient(60deg, #ffc000, #ff3f3a);
+      }
+
+      #title-wrapper .inner {
+        position: relative;
+        width: min(96%, 1920px);
+        height: 720px;
+        margin: 0 auto;
+      }
+      #title-wrapper .inner .info {
+        position: absolute;
+        width: 100vw;
+        max-width: 680px;
+        min-width: 260px;
+        bottom: -60px;
+        left: 0;
+        transform: translateX(-20%);
+      }
+
+      #title-wrapper .inner .logo {
+        margin-bottom: 10px;
+      }
+
+      #logo {
+        width: 300px;
+      }
+
+      #sales {
+        width: 300px;
+      }
+
+      .steam {
+        background-color: aqua;
+      }
+
+      .steam > img {
+        width: 400px;
+      }
+      #sum {
+        width: 100%;
+        height: auto;
+      }
+
+      /*인포*/
+      .infoArea {
+        background: url("asset/img/bg_soccer_pat.png") 0% 0% / 88px,
+          linear-gradient(
+              60deg,
+              rgb(125, 204, 243) 0%,
+              rgb(0, 184, 238) 36%,
+              rgb(0, 77, 182) 70%,
+              rgb(24, 0, 143) 100%
+            )
+            0% 0% / auto;
+        padding: 30px 0px 16px;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+      }
+      .infoArea img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .titleText {
+        margin: 16px;
+      }
+      .synopsis {
+        margin: 0 auto;
+      }
+
+      .gradient-outline {
+        background: linear-gradient(180deg, #7dff82, #5fffb9);
+        padding: 4px;
+        border-radius: 16px;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 16px;
+      }
+
+      /* 내부 이미지 */
+      .gradient-outline img {
+        display: block;
+        width: 800px;
+        height: auto;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="page-wrapper">
+        <div id="title-wrapper">
+          <div class="titleBg B1"></div>
+          <div class="inner">
+            <div class="spacer"></div>
+            <div class="section logo">
+              <img src="./asset/img/logo.png" alt="로고" id="logo" />
+            </div>
+
+            <div class="section">
+              <img
+                src="./asset/img/대호평발매중.png"
+                alt="대호평 발매중"
+                id="sales"
+              />
+            </div>
+            <div class="section">
+              <a href="https://google.com" class="steam">
+                <img
+                  src="./asset/img/구매하러가기버튼.png"
+                  alt="게임 구매하기 버튼"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <img src="./asset/img/요약.png" alt="요약" id="sum" />
+            </div>
+          </div>
+        </div>
+        <!-- 타이틀 끝 -->
+
+        <div class="infoArea">
+          <div class="titleText">
+            <img src="./asset/img/타이틀.png" alt="타이틀" />
+          </div>
+          <div class="synopsis">
+            <img src="./asset/img/시놉시스.png" alt="시놉시스" />
+          </div>
+
+          <div class="gradient-outline">
+            <img src="./asset/img/ezgif-7d9e06f0f4cdd2ea.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

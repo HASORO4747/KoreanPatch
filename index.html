@@ -69,14 +69,11 @@
       }
 
       #title-wrapper .titleBg {
-        background: url("./asset/img/ezgif-7d9e06f0f4cdd2ea.webp");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 720px;
-        width: 100%;
         position: absolute;
-        top: 0;
+        inset: 0;
+        width: 100%;
+        height: 720px;
+        object-fit: cover;
         z-index: -1;
       }
 
@@ -166,6 +163,9 @@
         height: auto;
         margin-bottom: 30px;
       }
+      .cautionTitle {
+        font-size: 40px;
+      }
 
       .titleText {
         margin: 16px auto;
@@ -195,7 +195,9 @@
     <main>
       <div class="page-wrapper">
         <div id="title-wrapper">
-          <div class="titleBg B1"></div>
+          <video class="titleBg" autoplay muted loop playsinline>
+            <source src="./asset/img/배경이미지1.webm" type="video/webm" />
+          </video>
           <div class="inner">
             <div class="spacer"></div>
             <div class="section logo">
@@ -219,6 +221,7 @@
 
         <div class="infoArea">
           <div class="caution">
+            <strong class="cautionTitle">⚠️주의사항⚠️</strong>
             <p>
               본 프로젝트는 비영리 팬프로젝트로 어떤 수익도 창출하지
               않습니다.<br />
@@ -238,7 +241,7 @@
             </p>
             <p>
               한글패치 파일을 수정하여 배포할 계획이 있다면 먼저 패치 팀에게
-              연락을 주세요<br />パッチの修正、変造および配布の計画がある場合は、事前にパッチのチームにご連絡お願いいたします。
+              연락해주세요.<br />パッチの修正、変造および配布の計画がある場合は、事前にパッチのチームにご連絡お願いいたします。
             </p>
           </div>
           <div class="titleText">

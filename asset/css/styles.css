@@ -114,11 +114,8 @@ body {
   right: 40px;
   z-index: 2;
 }
-.downloadBtn {
-  position: fixed;
-  bottom: 130px;
-  right: 40px;
-  z-index: 2;
+.middleSpacer {
+  height: 50px;
 }
 #sum {
   width: 100%;
@@ -239,7 +236,7 @@ body {
   width: auto;
   max-width: 870px;
   height: auto;
-  margin: 0 auto 40px;
+  margin: 0 auto 0;
 }
 .cautionTitle {
   font-size: 40px;

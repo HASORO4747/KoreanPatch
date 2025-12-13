@@ -29,190 +29,7 @@
       content="http://inazumaelevenkr.kro.kr/asset/img/titlelogo.png"
       property="og:image"
     />
-    <style>
-      /* 기본 설정 */
-      body {
-        margin: 0;
-        font-size: 16px;
-        background: #71e1f9;
-        font-family: "Noto Sans KR", sans-serif;
-        overflow-x: hidden;
-        text-align: center;
-      }
-
-      .page-wrapper {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
-      .section {
-        width: 100%;
-      }
-
-      .section img {
-        display: block;
-      }
-
-      /* 섹션 간 여백 */
-      .spacer {
-        height: 40px;
-      }
-
-      /* 타이틀 */
-
-      #title-wrapper {
-        position: relative;
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      #title-wrapper .titleBg {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 540px;
-        object-fit: cover;
-        z-index: -1;
-        object-position: center bottom;
-      }
-
-      @media screen and (min-width: 960px) {
-        #title-wrapper .titleBg {
-          width: 100%;
-          height: calc(100vw * 0.5625);
-        }
-      }
-
-      #title-wrapper:after {
-        font-size: 16px;
-        content: "";
-        height: 80px;
-        display: block;
-        width: 100%;
-        background: linear-gradient(60deg, #ffc000, #ff3f3a);
-      }
-
-      #title-wrapper .inner {
-        position: relative;
-        width: min(96%);
-        height: 540px;
-        margin: 0 auto;
-      }
-      @media screen and (min-width: 960px) {
-        #title-wrapper .inner {
-          width: 96%;
-          height: calc(100vw * 0.5625);
-        }
-      }
-      #title-wrapper .inner .info {
-        position: absolute;
-        width: 100vw;
-        max-width: 680px;
-        min-width: 260px;
-        bottom: -60px;
-        left: 0;
-        transform: translateX(-20%);
-        display: flex;
-        align-items: center; /* 세로 중앙정렬 */
-        gap: 10px;
-      }
-
-      #title-wrapper .inner .logo {
-        margin-bottom: 10px;
-      }
-
-      #logo {
-        width: 300px;
-      }
-      @media screen and (min-width: 960px) {
-        #logo {
-          width: 18vw;
-        }
-      }
-      #sales {
-        width: 300px;
-      }
-      @media screen and (min-width: 960px) {
-        #sales {
-          width: 18vw;
-        }
-      }
-
-      .steam {
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        z-index: 1;
-      }
-
-      #sum {
-        width: 100%;
-        height: auto;
-      }
-
-      /*인포*/
-      .infoArea {
-        background: url("asset/img/bg_soccer_pat.png") 0% 0% / 88px,
-          linear-gradient(
-              60deg,
-              rgb(125, 204, 243) 0%,
-              rgb(0, 184, 238) 36%,
-              rgb(0, 77, 182) 70%,
-              rgb(24, 0, 143) 100%
-            )
-            0% 0% / auto;
-        padding: 30px 0px 16px;
-        text-align: center;
-        margin: 0;
-        width: 100%;
-      }
-      .infoArea img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .caution {
-        color: #fff;
-        font-weight: 700;
-        text-align: center;
-        border-radius: 10px;
-        border: solid 2px #fff;
-        background: #e8303e;
-        padding: 1em 1.5em;
-        margin-inline: auto;
-        width: 900px;
-        height: auto;
-        margin-bottom: 40px;
-      }
-      .cautionTitle {
-        font-size: 40px;
-      }
-
-      .titleText {
-        margin: 16px 0 0px;
-      }
-      .synopsis {
-        margin: 0 auto;
-      }
-
-      .gradient-outline {
-        background: linear-gradient(90deg, #7dff82, #5fffb9);
-        padding: 4px;
-        display: inline-block;
-        box-sizing: border-box;
-        margin: 16px;
-        box-shadow: 5px 5px 20px 0.1px rgb(70, 69, 69);
-      }
-
-      /* 내부 이미지 */
-      .gradient-outline img {
-        display: block;
-        width: 835px;
-        height: auto;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <main>
@@ -236,37 +53,72 @@
             </div>
             <div class="section"></div>
             <div class="info">
-              <img src="./asset/img/요약.png" alt="요약" id="sum" />
+              <img src="./asset/img/요약2.png" alt="요약" id="sum" />
             </div>
           </div>
         </div>
         <!-- 타이틀 끝 -->
 
         <div class="infoArea">
-          <div class="caution">
-            <strong class="cautionTitle">⚠️주의사항⚠️</strong>
-            <p>
-              본 프로젝트는 비영리 팬프로젝트로 어떤 수익도 창출하지
-              않습니다.<br />
-              本プロジェクトは、非営利的ファンプロジェクトであり、収益化は致しません。
+          <div class="descImg descTitleImg">
+            <img
+              src="./asset/img/중간바크게.png"
+              alt="천둥중학교 축구부의 전설 그로부터 25년..."
+            />
+          </div>
+          <div class="descImg">
+            <img
+              src="./asset/img/시놉시스요약new.png"
+              alt="새로운무대 새로운주인공 새로운이야기"
+            />
+          </div>
+          <div class="descImg descImgLogo">
+            <img src="./asset/img/titlelogo2.png" alt="로고" />
+          </div>
+          <div class="desc">
+            <div class="desc-title" data-text="100% 비공식 한글화 완료!">
+              <span>100% 비공식 한글화 완료!</span>
+            </div>
+            <p class="desc-main">
+              스토리모드 스토리 한글화<br />크로니클모드 스토리 한글화<br />
+              필살기 연출 한글화<br />초차원 기술 한글화<br />UI 이미지
+              한글화<br />시스템 메시지 한글화<br />기타 텍스트 한글화<br />
             </p>
-
-            <p>
-              이나즈마 일레븐의 상표권과 모든 권리는 LEVEL5 Inc.
-              (株式会社レベルファイブ) 에게 있습니다.
-              <br />イナズマイレブンの商標権及び全ての権利はLEVEL5 Inc.
-              (株式会社レベルファイブ) に帰属されます。
-            </p>
-            <p>
-              한글패치 파일에 게임파일은 포함되어 있지 않으며 Steam페이지를 통해
-              게임을 구매해주세요.
-              <br />本パッチにゲーム本編は含まれておらず、STEAMページなどの公式ルートを通じてゲームをご購入お願いいたします。
-            </p>
-            <p>
-              한글패치 파일을 수정하여 배포할 계획이 있다면 먼저 패치 팀에게
-              연락해주세요.<br />パッチの修正、変造および配布の計画がある場合は、事前にパッチのチームにご連絡お願いいたします。
+            <p class="desc-note">
+              ※모든 기계번역 텍스트는 손번역으로 교체완료되었습니다.<br />※캐릭터
+              이름은 원어(일본어) 표기를 기준으로 작업하였니다.<br />※필살기
+              텍스트의 스타일 재현을 위해 생성형 이미지가 일부
+              사용되었습니다.<br />※그외 모든 이미지와 텍스트는 수작업으로
+              제작되었습니다.
             </p>
           </div>
+          <div class="caution-wrap">
+            <section class="caution">
+              <strong class="cautionTitle">⚠️주의사항⚠️</strong>
+              <p>
+                본 프로젝트는 비영리 팬프로젝트로 어떤 수익도 창출하지
+                않습니다.<br />
+                本プロジェクトは、非営利的ファンプロジェクトであり、収益化は致しません。
+              </p>
+
+              <p>
+                이나즈마 일레븐의 상표권과 모든 권리는 LEVEL5 Inc.
+                (株式会社レベルファイブ) 에게 있습니다.
+                <br />イナズマイレブンの商標権及び全ての権利はLEVEL5 Inc.
+                (株式会社レベルファイブ) に帰属されます。
+              </p>
+              <p>
+                한글패치 파일에 게임파일은 포함되어 있지 않으며 Steam페이지를
+                통해 게임을 구매해주세요.
+                <br />本パッチにゲーム本編は含まれておりません。ゲーム本編はSteamページなど、正規販売ルートでご購入ください。
+              </p>
+              <p>
+                한글패치 파일을 수정하여 배포할 계획이 있다면 먼저 패치 팀에게
+                연락해주세요.<br />パッチの修正、変造および配布の計画がある場合は、事前にパッチのチームにご連絡お願いいたします。
+              </p>
+            </section>
+          </div>
+
           <div class="titleText">
             <img src="./asset/img/타이틀1.png" alt="타이틀" />
           </div>
@@ -287,6 +139,11 @@
           <div class="gradient-outline">
             <img src="./asset/img/template_image1.jpg" alt="" />
           </div>
+          <section class="credit">
+              <img src="./asset/img/한글패치크레딧.png" alt="크레딧 이미지" class="credit1" />
+              <img src="./asset/img/한글패치크레딧2.png" alt="크레딧 이미지" class="credit2" />
+          </section>
+          <div class="bottomSpacer"></div>
         </div>
       </div>
     </main>
@@ -295,6 +152,9 @@
       class="steam"
     >
       <img src="./asset/img/구매하러가기버튼.png" alt="게임 구매하기 버튼" />
+    </a>
+    <a href="./asset/download/다운로드_테스트.zip" class="downloadBtn" download>
+      <img src="./asset/img/다운로드버튼.png" alt="게임 구매하기 버튼" />
     </a>
   </body>
 </html>

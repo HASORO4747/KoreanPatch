@@ -1,0 +1,295 @@
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-size: 16px;
+  background: #71e1f9;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section {
+  width: 100%;
+}
+
+.section img {
+  display: block;
+}
+
+/* 섹션 간 여백 */
+.spacer {
+  height: 40px;
+}
+
+/* 타이틀 */
+
+#title-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#title-wrapper .titleBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  z-index: -1;
+  object-position: center bottom;
+}
+
+@media screen and (min-width: 960px) {
+  #title-wrapper .titleBg {
+    width: 100%;
+    height: calc(100vw * 0.5625);
+  }
+}
+
+#title-wrapper:after {
+  font-size: 16px;
+  content: "";
+  height: 80px;
+  display: block;
+  width: 100%;
+  background: linear-gradient(60deg, #ffc000, #ff3f3a);
+}
+
+#title-wrapper .inner {
+  position: relative;
+  width: min(96%);
+  height: 540px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  #title-wrapper .inner {
+    width: 96%;
+    height: calc(100vw * 0.5625);
+  }
+}
+#title-wrapper .inner .info {
+  position: absolute;
+  width: 100vw;
+  max-width: 680px;
+  min-width: 260px;
+  bottom: -60px;
+  left: 0;
+  transform: translateX(-40%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#title-wrapper .inner .logo {
+  margin-bottom: 10px;
+}
+
+#logo {
+  width: 300px;
+}
+@media screen and (min-width: 960px) {
+  #logo {
+    width: 18vw;
+  }
+}
+#sales {
+  width: 300px;
+}
+@media screen and (min-width: 960px) {
+  #sales {
+    width: 18vw;
+  }
+}
+
+.steam {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1;
+}
+.downloadBtn {
+  position: fixed;
+  bottom: 130px;
+  right: 40px;
+  z-index: 1;
+}
+#sum {
+  width: 100%;
+  height: auto;
+}
+
+/*인포*/
+.infoArea {
+  background: url("../img/bg_soccer_pat.png") 0% 0% / 88px,
+    linear-gradient(
+        60deg,
+        rgb(125, 204, 243) 0%,
+        rgb(0, 184, 238) 36%,
+        rgb(0, 77, 182) 70%,
+        rgb(24, 0, 143) 100%
+      )
+      0% 0% / auto;
+  padding: 30px 0px 16px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+.infoArea img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+.descTitleImg img {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+.descImgLogo {
+  margin-top: -30px;
+}
+.descImgLogo img {
+  width: 700px;
+}
+.desc {
+  text-align: center;
+  padding: 30px 20px;
+}
+.desc-title {
+  font-family: "SUIT", sans-serif;
+  position: relative;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.desc-title span {
+  position: relative;
+  z-index: 2;
+
+  background: linear-gradient(0deg, #ff004e 0%, #f721ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-title::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  color: #130002;
+
+  -webkit-text-stroke-width: 10px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 7px 7px 6px rgba(0, 0, 0, 0.75);
+}
+
+.desc-main {
+  font-family: "SUIT", sans-serif;
+  font-weight: 800; /* ExtraBold */
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+
+  color: #f0fffe;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 0, 0);
+  margin: 16px auto;
+}
+
+.desc-note {
+  font-family: "SUIT", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+
+  color: #f0fffe;
+}
+.caution-wrap {
+  padding-inline: 16px;
+}
+.caution {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 2px #fff;
+  background: #e8303e;
+  padding: 1em 1.5em;
+  width: auto;
+  max-width: 870px;
+  height: auto;
+  margin: 0 auto 40px;
+}
+.cautionTitle {
+  font-size: 40px;
+}
+
+.titleText {
+  margin: 16px 0 0px;
+}
+.titleText img {
+  width: 950px;
+}
+.synopsis {
+  margin: 0 auto;
+}
+.synopsis img {
+  width: 950px;
+}
+
+.gradient-outline {
+  background: linear-gradient(90deg, #7dff82, #5fffb9);
+  padding: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 16px;
+  box-shadow: 5px 5px 20px 0.1px rgb(70, 69, 69);
+}
+
+/* 내부 이미지 */
+.gradient-outline img {
+  display: block;
+  width: 913px;
+  height: auto;
+}
+.credit {
+  width: 100%;
+  height: 850px; /* 기준 높이 */
+  overflow: hidden; /* 잘리게 */
+}
+
+.credit .credit1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 잘라서 채우기 */
+  object-position: center center;
+}
+@media (max-width: 960px) {
+  .credit1 {
+    display: none;
+  }
+  .credit2 {
+    display: inline;
+  }
+}

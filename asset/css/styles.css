@@ -96,26 +96,11 @@ body {
   min-width: 260px;
   bottom: -60px;
   left: 0;
-  transform: translateX(-40%);
+  transform: translateX(-28%);
   display: flex;
   align-items: center;
   gap: 10px;
 }
-@media screen and (min-width: 1921px) {
-  #title-wrapper .inner .info {
-    width: 60vw;
-    bottom: -3vw;
-    left: -1vw;
-  }
-}
-@media screen and (min-width: 1921px) {
-  #title-wrapper .inner .info img {
-    width: 80vw;
-    bottom: -3vw;
-    left: -1vw;
-  }
-}
-
 
 #title-wrapper .inner .logo {
   margin-bottom: 10px;

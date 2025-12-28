@@ -158,7 +158,106 @@ body {
   height: auto;
   text-align: center;
 }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.card-frame {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card-content {
+  position: relative;
+  z-index: 3;
+
+  width: 100%;
+  font-size: 20px;
+  height: 75%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-bar {
+  width: 100%;
+  text-align: center;
+
+  font-family: "SUIT", sans-serif;
+  font-weight: 900; /* Heavy */
+
+  letter-spacing: 0.1em;
+
+  transform: skewX(-10deg);
+
+  color: black; /* 안쪽 글자색 (원하는 색으로 변경) */
+
+  -webkit-text-stroke: 3px #fff; /* 흰색 획 4pt */
+  paint-order: stroke fill; /* 획이 뒤, 채움이 앞 */
+}
+
+.cardEx {
+  width: 600px;
+  margin: 0px auto;
+}
+.cardEx .card-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+
+  border-radius: 30px 30px 0px 0px;
+  z-index: 1;
+}
+.cardEx .card-content {
+  position: relative;
+  z-index: 3;
+
+  width: 100%;
+  font-size: 20px;
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 이미지 섹션 */
 .descTitleImg img {
+  width: 800px;
+  margin-top: 16px;
   mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -174,6 +273,16 @@ body {
     black 90%,
     transparent 100%
   );
+}
+.descImg2 {
+  width: 300px;
+  margin: 0px auto;
+  margin-top: -16px;
+  margin-bottom: 16px;
+}
+.descImgNewone {
+  width: 850px;
+  margin: 0 auto;
 }
 .descIntro {
   margin-top: -30px;

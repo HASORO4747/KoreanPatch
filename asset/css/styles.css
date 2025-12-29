@@ -130,8 +130,13 @@ body {
   right: 40px;
   z-index: 2;
 }
+.version {
+  font-weight: bold;
+  color: white;
+  margin-top: -5px;
+}
 .middleSpacer {
-  height: 50px;
+  height: 16px;
 }
 #sum {
   width: 100%;
